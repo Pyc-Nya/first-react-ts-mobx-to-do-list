@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Pyc-Nya/first-react-ts-mobx-to-do-list/static/css/main.8dba0ea5.css",
+    "main.js": "/Pyc-Nya/first-react-ts-mobx-to-do-list/static/js/main.3c16f24c.js",
+    "index.html": "/Pyc-Nya/first-react-ts-mobx-to-do-list/index.html",
+    "main.8dba0ea5.css.map": "/Pyc-Nya/first-react-ts-mobx-to-do-list/static/css/main.8dba0ea5.css.map",
+    "main.3c16f24c.js.map": "/Pyc-Nya/first-react-ts-mobx-to-do-list/static/js/main.3c16f24c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8dba0ea5.css",
+    "static/js/main.3c16f24c.js"
+  ]
+}
