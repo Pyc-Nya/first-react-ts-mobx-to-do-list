@@ -1,0 +1,345 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea, a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  font: inherit;
+  font-weight: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #ddd;
+  border-radius: 6px;
+}
+
+.container {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: 37.5em;
+  margin: 0 auto;
+  height: 100vh;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #7b7b7b;
+}
+
+.search-bar {
+  position: absolute;
+  width: 100%;
+  height: 2.375em;
+  top: 0;
+  font-size: 2em;
+  padding: 0.3125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  border: 0.1px solid #9a9a9a;
+  background: #f4f4f4;
+}
+.search-bar__clear-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0.9375em;
+  border-radius: 0.25em;
+}
+.search-bar__clear-button:hover, .search-bar__clear-button :active {
+  border: 1px solid #000;
+}
+.search-bar__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid #000;
+  border-radius: 0.3125em;
+  padding: 0.1875em;
+  margin-right: 0.3125em;
+}
+
+.tasks-container {
+  height: 100%;
+  position: relative;
+}
+
+.tasks {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 4.75em - 5em);
+  margin-top: 4.75em;
+  overflow-y: scroll;
+  background: #7b7b7b;
+}
+
+.task {
+  background: #f4f4f4;
+  font-size: 1.5em;
+  margin-bottom: 0.125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.3125em;
+}
+.task:last-child {
+  margin-bottom: 0;
+}
+.task__title {
+  cursor: pointer;
+  overflow: hidden;
+  height: 1.125em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.task__title:hover, .task__title :active {
+  color: #9a9a9a;
+}
+.task__delete-button {
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 0 0.25em;
+  border-radius: 0.3125em;
+}
+.task__delete-button:hover, .task__delete-button :active {
+  color: #9a9a9a;
+}
+
+.new-task {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5em;
+  background: #f4f4f4;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.625em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.new-task:hover, .new-task:active {
+  color: #9a9a9a;
+}
+.new-task__button {
+  font-size: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0.9375em;
+  height: 0.9375em;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #9a9a9a;
+}
+
+.editor__nav-bar {
+  background: #fff;
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5em;
+  border-bottom: 1px solid #7b7b7b;
+}
+.editor__back-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 2.5em;
+  color: #fff;
+  background: #7b7b7b;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.editor__back-button:hover, .editor__back-button:active {
+  color: #000;
+}
+.editor__title {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  text-align: center;
+  font-size: 1.5em;
+}
+.editor__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #7b7b7b;
+  color: #fff;
+  font-size: 0.8em;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.editor__description {
+  width: 100%;
+  padding: 0.3125em;
+  font-size: 1.3em;
+  resize: none;
+  height: calc(100vh - 6.25em);
+}
+.editor__save-button {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 2em;
+  height: 2.4375em;
+  background: #7b7b7b;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.editor__save-button:hover, .editor__save-button:active {
+  color: #000;
+}

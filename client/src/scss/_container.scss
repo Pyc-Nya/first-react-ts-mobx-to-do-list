@@ -1,0 +1,197 @@
+$BG: #f4f4f4;
+$BD: #9a9a9a;
+
+.container {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  width: pxToEm(600px);
+  margin: 0 auto;
+  height: 100vh;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #7b7b7b;
+  // background: #b8b8b8;
+}
+
+.search-bar {
+  position: absolute;
+  width: 100%;
+  height: pxToEm(38px);
+  top: 0;
+  font-size: 2em;
+  padding: pxToEm(5px);
+  display: flex;
+  align-items: baseline;
+  border: .1px solid $BD;
+  background: $BG;
+
+  &__clear-button {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToEm(15px);
+    border-radius: pxToEm(4px);
+
+    &:hover, :active {
+      border: 1px solid #000;
+    }
+  }
+
+  &__input {
+    flex: 1;
+    border: 1px solid #000;
+    border-radius: pxToEm(5px);
+    padding: pxToEm(3px);
+    margin-right: pxToEm(5px);
+  }
+}
+
+.tasks-container {
+  height: 100%;
+  position: relative;
+}
+
+.tasks {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - pxToEm(76px) - pxToEm(80px));
+  margin-top: pxToEm(76px);
+  overflow-y: scroll;
+  background: #7b7b7b;
+}
+
+.task {
+  background: $BG;
+  font-size: 1.5em;
+  margin-bottom: pxToEm(2px);
+  display: flex;
+  padding: pxToEm(5px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    cursor: pointer;
+    overflow: hidden;
+    height: pxToEm(18px);
+    flex: 1;
+
+    &:hover, :active {
+      color: $BD;
+    }
+  }
+
+  &__delete-button {
+    cursor: pointer;
+    border: 1px solid #000;
+    padding: 0 pxToEm(4px);
+    border-radius: pxToEm(5px);
+
+    &:hover, :active {
+      color: $BD;
+    }
+  }
+}
+
+.new-task {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: pxToEm(80px);
+  background: $BG;
+  text-align: center;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: pxToEm(10px);
+  cursor: pointer;
+  user-select: none;
+
+  &:hover, &:active {
+    color: #9a9a9a;
+  }
+
+  &__button {
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: pxToEm(15px);
+    height: pxToEm(15px);
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid $BD;
+  }
+}
+
+.editor {
+
+  &__nav-bar {
+    background: #fff;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: pxToEm(40px);
+    border-bottom: 1px solid #7b7b7b;
+  }
+
+  &__back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: pxToEm(40px);
+    color: #fff;
+    background: #7b7b7b;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover, &:active {
+      color: #000;
+    }
+  }
+
+  &__title {
+    flex: 2;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7b7b7b;
+    color: #fff;
+    font-size: 0.8em;
+    height: 100%;
+    flex: 1;
+  }
+
+  &__description {
+    width: 100%;
+    padding: pxToEm(5px);
+    font-size: 1.3em;
+    resize: none;
+    height: calc(100vh - pxToEm(100px));
+  }
+
+  &__save-button {
+    cursor: pointer;
+    user-select: none;
+    font-size: 2em;
+    height: pxToEm(39px);
+    background: #7b7b7b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover, &:active {
+      color: #000;
+    }
+  }
+}
+
