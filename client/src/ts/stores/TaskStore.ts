@@ -24,16 +24,7 @@ class TaskStoreClass implements ITaskStoreClass {
   }
 
   addTask = (data: ITaskData): void => {
-    let index: number = -1;
-    for (let i = 0; i < this.tasks.length; i++) {
-      const a: number = this.tasks[i]?.id ?? -1;
-      const b: number = data.id
-      if (a === b) {
-        index = i;
-        console.log('i found');
-        break;
-      }
-    }
+    const index: number = this.tasks.findIndex(e => e.id === data.id);
     if (index !== -1) {
       this.tasks[index] = data;
     } else {
