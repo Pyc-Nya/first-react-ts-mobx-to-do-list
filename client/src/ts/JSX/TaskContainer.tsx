@@ -1,7 +1,7 @@
 import { observer } from "mobx-react";
-import { TaskStore } from "../../stores/TaskStore";
-import { ITaskData } from "../../stores/TaskStore";
-import { SearchStore } from "../../stores/SerachStore";
+import { TaskStore } from "../stores/TaskStore";
+import { ITaskData } from "../stores/TaskStore";
+import { SearchStore } from "../stores/SerachStore";
 import Task from "./Task";
 import AddTask from "./AddTask";
 

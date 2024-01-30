@@ -1,6 +1,6 @@
-import { ActiveStore } from "../../stores/ActiveStore";
-import { TaskStore } from "../../stores/TaskStore";
-import { EditorStore } from "../../stores/EditorStore";
+import { ActiveStore } from "../stores/ActiveStore";
+import { TaskStore } from "../stores/TaskStore";
+import { EditorStore } from "../stores/EditorStore";
 import { observer } from "mobx-react";
 
 function Editor() {

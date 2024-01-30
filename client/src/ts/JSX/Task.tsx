@@ -1,5 +1,5 @@
-import { EditorStore } from "../../stores/EditorStore";
-import { ITaskData, TaskStore } from "../../stores/TaskStore";
+import { EditorStore } from "../stores/EditorStore";
+import { ITaskData, TaskStore } from "../stores/TaskStore";
 
 interface ITaskProps {
   data: ITaskData

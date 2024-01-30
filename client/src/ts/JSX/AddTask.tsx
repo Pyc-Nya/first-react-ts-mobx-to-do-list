@@ -1,6 +1,6 @@
-import { ActiveStore } from "../../stores/ActiveStore";
+import { ActiveStore } from "../stores/ActiveStore";
 import { observer } from "mobx-react";
-import { EditorStore } from "../../stores/EditorStore";
+import { EditorStore } from "../stores/EditorStore";
 
 function AddTask() {
 
