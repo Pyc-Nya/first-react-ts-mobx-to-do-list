@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/first-react-ts-mobx-to-do-list/static/css/main.8dba0ea5.css",
+    "main.css": "/first-react-ts-mobx-to-do-list/static/css/main.77173304.css",
     "main.js": "/first-react-ts-mobx-to-do-list/static/js/main.3c16f24c.js",
     "index.html": "/first-react-ts-mobx-to-do-list/index.html",
-    "main.8dba0ea5.css.map": "/first-react-ts-mobx-to-do-list/static/css/main.8dba0ea5.css.map",
+    "main.77173304.css.map": "/first-react-ts-mobx-to-do-list/static/css/main.77173304.css.map",
     "main.3c16f24c.js.map": "/first-react-ts-mobx-to-do-list/static/js/main.3c16f24c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dba0ea5.css",
+    "static/css/main.77173304.css",
     "static/js/main.3c16f24c.js"
   ]
 }
