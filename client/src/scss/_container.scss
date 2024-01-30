@@ -196,3 +196,14 @@ $BD: #9a9a9a;
   }
 }
 
+@media screen and (max-width: 700px) {
+  .container {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    font-size: 0.7em;
+  }
+}

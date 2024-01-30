@@ -201,6 +201,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #000;
   padding: 0 0.25em;
   border-radius: 0.3125em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .task__delete-button:hover, .task__delete-button :active {
   color: #9a9a9a;
@@ -342,4 +346,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .editor__save-button:hover, .editor__save-button:active {
   color: #000;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    font-size: 0.7em;
+  }
 }
